@@ -1,0 +1,983 @@
+/*Css Reset*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fontes/Inter-Regular.ttf");
+}
+
+/*Cabeçalho*/
+
+header{
+    background-color: #7CC2F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+    font-family: "Montserrat";
+    font-size: 22px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: sticky;
+}
+
+.mss{
+    margin-left: 3vw;
+}
+
+.nav__desktop{
+    margin-right: 3vw;
+    width: 50vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao__nav__mobile{
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header a:hover{
+    color:#737AF9;
+}
+
+/*Apresentação pessoal*/
+
+.apresentacao{
+    /*background-color: chartreuse;*/
+    margin-left: 3vw;
+    width: 94vw;
+    height: 28vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto__apresentacao{
+    width: 46vw;
+    height: 26vw;
+    margin-top: 2vw;
+    /*background-color: pink;*/
+}
+
+.titulo__texto{
+    background-color: #737AF9;
+    width: 45vw;
+    height: 5vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 32px;
+}
+
+.paragrafo__apresentacao{
+    width: 30vw;
+    height: 8vw;
+    margin-top: 3vw;
+    /*background-color: #FFFFFF;*/
+    font-family: "Inter";
+    font-size: 18px;
+    
+}
+
+.botao__apresentacao{
+    margin-top: 3vw;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 8px;
+    background-color: #737AF9;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.icone__mobile{
+    display: none;
+}
+
+.imagem__apresentacao__desktop{
+    /*background-color: #FFFFFF;*/
+    margin-top: 4vw;
+    height: 20vw;
+    width: 22vw;
+}
+
+.imagem__apresentacao__desktop img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Sobre mim*/
+
+.sobre__mim{
+    /*background-color: pink;*/
+    margin-left: 3vw;
+    margin-top: 8vw;
+    width: 94vw;
+    height: 28vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container__foto{
+    background-color: #7CC2F3;
+    width: 34vw;
+    height: 28vw;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    background-color: #FFFFFF;
+    width: 30vw;
+    height: 24vw;
+    border-radius: 8px;
+}
+
+.texto__sobre__mim{
+    width: 58vw;
+    height: 28vw;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    /*background-color: green;*/
+}
+
+.titulo__direito{
+    background-color: #737AF9;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 10px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 32px;
+}
+
+.titulo__sobre__mim__mobile{
+    display: none;
+}
+
+.descricao__sobre__mim{
+    margin-top: 3vw;
+    width: 58vw;
+    height: 20vw;
+    /*background-color: darkblue;*/
+    font-family: "Inter";
+    font-size: 18px;
+}
+
+/*Habilidades*/
+
+.habilidades{
+    background-color: pink;
+    margin-left: 3vw;
+    margin-top: 8vw;
+    width: 94vw;
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__esquerdo{
+    background-color: #737AF9;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.secao__habilidades{
+    margin-top: 5vw;
+    width: 94vw;
+    height: 45vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: crimson;
+    flex-wrap: wrap;
+}
+
+.tecnologia{
+    width: 20vw;
+    height: 20vw;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto__tecnologia{
+    width: 20vw;
+    height: 16vw;
+    background-color: aqua;
+}
+
+.foto__tecnologia img{
+    width: 100%;
+    height: 100%;    
+}
+
+.titulo__tecnologia{
+    width: 20vw;
+    height: 3vw;
+    background-color:#737AF9;
+    border-radius: 8px;
+    margin-top: 0.5vw;
+    font-family: "Inter";
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+/*Projetos*/
+
+.projetos{
+    background-color:chartreuse;
+    margin-left: 3vw;
+    margin-top: 8vw;
+    width: 94vw;
+    height: 110vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__projetos{
+    background-color: #999999;
+    width: 94vw;
+    height: 20vw;
+    margin-top:5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto__projeto{
+    width: 20vw;
+    height: 20vw;
+    background-color: #000;
+}
+
+.foto__projeto__mobile{
+    display: none;
+}
+.container__texto__projeto{
+    width: 70vw;
+    height: 20vw;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__projeto{
+    margin-top: 1vw;
+    width: 30vw;
+    height: 3vw;
+    background-color: #737AF9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 18px;
+    color: #FFF;
+}
+
+.descricao__projeto{
+    margin-top: 1vw;
+    width: 70vw;
+    height: 10vw;
+    background-color: darkmagenta;
+}
+
+.container__botoes{
+    margin-top: 1vw;
+    width: 20vw;
+    height: 3vw;
+    background-color: darkgoldenrod;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__botoes button{
+    background-color: #737AF9;
+    width: 8vw;
+    height: 3vw;
+    font-family: "Inter";
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ver__mais button{
+    margin-top: 1vw;
+    background-color: #737AF9;
+    align-self: center;
+    width: 10vw;
+    height: 3vw;
+    font-family: "Inter";
+    font-size:16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+/*Certificados*/
+
+.certificados{
+    margin-left: 3vw;
+    margin-top: 8vw;
+    width: 94vw;
+    height: 50vw;
+    background-color: darkgreen;
+}
+
+.container__certificados{
+    background-color: #000;
+    margin-top: 3vw;
+    width: 94vw;
+    height: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificado{
+    background-color: #999999;
+    width: 28vw;
+    height: 40vw;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.certificado p{
+    font-size: 2vw;
+    font-family: "Inter";
+
+}
+
+.icone__descricao__curso{
+    background-color: blueviolet;
+    width: 28vw;
+    height: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+}
+
+.icone__curso{
+    background-color: chartreuse;
+    width: 14vw;
+    height: 14vw;
+}
+
+.icone__curso img{
+    width: 100%;
+    height: 100%;
+}
+
+.icone__descricao__curso p{
+    font-family: "Inter";
+    font-size: 2vw;
+    text-align: center;
+}
+
+/*Footer do site*/
+
+footer{
+    height: 20vw;
+    background-color: #7CC2F3;
+    display: flex;
+    margin-top: 5vw;
+}
+
+.secao__um__footer{
+    background-color: red;
+    display: flex;
+    width: 60vw;
+    height: 20vw;
+    justify-content: space-between;
+    margin-left: 3vw;
+}
+
+.texto__footer{
+    width: 8vw;
+    height: 5vw;
+    background-color: darkorange;
+    font-family: "Montserrat";
+    font-size: 3vw;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto__footer p{
+    align-self: center;
+}
+
+.secao__footer{
+    width: 20vw;
+    height: 20vw;
+    background-color: #999999;
+    font-family: "Montserrat";
+    font-size: 3vw;
+    color: #FFF;
+}
+
+.container__topicos{
+    background-color: cadetblue;
+    margin-top: 1vw;
+    width: 20vw;
+    height:14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quadrado__texto{
+    width: 20vw;
+    height: 3vw;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+
+.quadrado{
+    background-color: #737AF9;
+    width: 4vw;
+    height: 3vw;
+    border-radius: 1vw;
+}
+
+.texto__menor{
+    font-size: 1.5vw;
+    font-family: "Inter";
+    margin-left: 0.5vw;
+}
+
+/*Responsivo - Mobile*/ 
+
+@media screen and (max-width: 425px)
+{
+    /*NAV*/
+    header{
+        height: 10vw;
+        font-size: 5vw;
+    }
+
+    .nav__desktop{
+        display: none;
+    }
+
+    .botao__nav__mobile{
+        margin-right: 3vw;
+        width: 10vw;
+        height: 6vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linha__margem{
+        margin-top: 1.2vw;
+       
+    }
+
+    /*Apresentação - conteúdo um*/
+
+    .apresentacao{
+        flex-direction: column;
+        background-color: darkmagenta;
+        height:76vw;
+    }
+
+    .texto__apresentacao{
+        background-color: #999999;
+        width: 94vw;
+        height: 76vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto__apresentacao .titulo__texto{
+        width: 70vw;
+        height: 10vw;
+        font-size: 5vw;
+        align-self: start;
+    }
+
+    .texto__apresentacao .paragrafo__apresentacao{
+        font-size: 4vw;
+        background-color: aqua;
+        width: 94vw;
+        height: 15vw;
+        text-align: start;
+    }
+
+    .imagem__apresentacao__desktop{
+        display: none;
+    }
+
+    .icone__mobile{
+        display: block;
+        width: 30vw;
+        height: 30vw;
+        background-color: aqua;
+        margin-top: 3vw;
+    }
+
+    .icone__mobile img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .botao__apresentacao{
+        width: 20vw;
+        height: 8vw;
+    }
+
+    /*Sobre mim - conteúdo dois*/
+
+    .sobre__mim{
+        background-color: blue;
+        height: 98vw;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    .titulo__sobre__mim{
+        display: none;
+
+    }
+
+    .titulo__sobre__mim__mobile{
+        background-color: #737AF9;
+        width: 34vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        align-self: flex-end;
+        font-size: 5vw;
+        color: white;
+        font-family: "Montserrat";
+    }
+
+    .descricao__sobre__mim{
+        background-color: #7CC2F3;
+        font-size: 4vw;
+        width: 94vw;
+        height: 45vw;
+        text-align: start;
+        margin-top: 0vw;
+    }
+
+    .texto__sobre__mim{
+        align-self: flex-start;
+        margin-top: 3vw;
+    }
+
+
+    .container__foto{
+        width: 40vw;
+        height: 40vw;
+        margin-top: 3vw;
+    }
+
+    .foto{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    /*Habilidades - conteúdo três*/
+    .habilidades{
+        height: 205vw;
+    }
+
+    .titulo__esquerdo{
+        font-size: 5vw;
+        width: 35vw;
+        height: 10vw;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .secao__habilidades{
+        width: 94vw;
+        flex-wrap: wrap;
+        height: 190vw;
+    }
+
+    .secao__habilidades__mobile{
+        margin-top: 0vw;
+    }
+
+    .tecnologia{
+        width: 45vw;
+        height:45vw;
+        
+    }
+
+    .foto__tecnologia{
+        width: 45vw;
+        height: 35vw;
+        
+    }
+
+    .titulo__tecnologia{
+        width: 45vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    /*Projetos - conteúdo quatro*/
+
+    .projetos{
+        height: 398vw;
+    }
+
+    .titulo__direito{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 34vw;
+        height: 10vw;
+        font-size: 5vw;   
+    }
+
+    .foto__projeto{
+        display: none;
+    }
+
+    .container__projetos{
+        height: 90vw;
+    }
+
+    .container__texto__projeto{
+        width: 94vw;
+        height: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo__projeto{
+        width: 60vw;
+        height: 8vw;
+        font-size: 4vw;
+    }
+
+    .foto__projeto__mobile{
+        display: block;
+        height: 35vw;
+        width: 35vw;
+        background-color: #999999;
+        margin-top: 2vw;
+
+    }
+
+    .descricao__projeto{
+        margin-top: 2vw;
+        width: 94vw;
+        height: 32vw;
+    }
+
+    .container__botoes{
+        margin-top: 0vw;
+        align-self: center;
+        width: 30vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .container__botoes button{
+        width: 13vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+
+    .ver__mais button{
+        width: 18vw;
+        height: 6vw;
+        font-size: 3vw;
+        
+    }
+
+    /*Certificados - conteúdo cinco*/
+
+    .certificados{
+        height: 130vw;
+    }
+
+    .container__certificados{
+        height: 115vw;
+        flex-wrap: wrap;
+    }
+
+    .certificado{
+        width: 45vw;
+        height: 55vw;
+    }
+
+    .icone__descricao__curso{
+        width: 45vw;
+        height: 35vw;
+    }
+
+    .icone__descricao__curso p{
+        font-size: 3vw;
+    }
+
+    .certificado p{
+        font-size: 3vw;
+    }
+
+    /*Footer - último conteúdo*/
+
+    footer{
+        height: 90vw;
+    }
+
+    .secao__um__footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 94vw;
+        height: 90vw;
+        align-items: center;
+    }
+
+    .secao__footer{
+        width: 30vw;
+        height: 35vw;
+        text-align: center;
+    }
+
+    .container__topicos{
+        height: 30vw;
+        width: 30vw;
+        background-color: purple;
+    }
+    .quadrado__texto{
+        width: 30vw;
+        height: 6vw;
+    }
+
+    .texto__menor{
+        font-size: 2.5vw;
+    }
+
+}
+
+/*Responsivo tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    header{
+        height: 8vw;
+    }
+
+    .nav__desktop{
+        width: 60vw;
+    }
+
+    .titulo__texto{
+        width: 60vw;
+        height: 7vw;
+        justify-content: flex-start;
+    }
+
+    .paragrafo__apresentacao{
+        background-color: #737AF9;
+        width: 50vw;
+        height: 15vw;
+        font-size: 3vw;
+    }
+
+    .botao__apresentacao{
+        width: 20vw;
+        height: 4vw;
+    }
+
+    /*Sobre mim - Conteúdo dois*/
+
+    .sobre__mim{
+        background-color: #F0F;
+        margin-top: 9vw;
+        height: 31vw;
+    }
+
+    .texto__sobre__mim{
+        background-color: red;
+        height: 31vw;
+    }
+
+    .descricao__sobre__mim{
+        background-color: #7CC2F3;
+        height: 22vw;
+        margin-top: 2vw;
+    }
+
+    .container__foto{
+        height: 31vw;
+    }
+
+    .foto{
+        height: 27vw;
+    }
+
+    .titulo__direito{
+        width: 30vw;
+        height: 7vw;
+    }
+
+    /*Conteúdo três - Habilidades*/
+
+    .titulo__esquerdo{
+        height: 7vw;
+        width: 28vw;
+    }
+
+    .habilidades{
+        height: 105vw;
+    }
+
+    .secao__habilidades{
+        flex-wrap: wrap;
+        height: 95vw;
+        background-color: #737AF9;
+    }
+
+    .tecnologia{
+        background-color: red;
+        width: 30vw;
+        height: 30vw;
+        align-items: center;
+    }
+
+    .foto__tecnologia{
+        width: 30vw;
+        height: 25vw;
+    }
+
+    .titulo__tecnologia{
+        height: 4vw;
+        width: 18vw;
+    }
+
+    /*Conteúdo quatro - projetos*/
+
+    .projetos{
+        height: 120vw;
+    }
+
+    .container__dos__projetos{
+        background-color: #F0F;
+        height: 110vw;
+        width: 94vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container__projetos{
+        width: 45vw;
+        height: 50vw;
+    }
+
+    .titulo__projeto{
+        margin-top: 0;
+    }
+    .foto__projeto{
+        display: none;
+    }
+
+    .container__texto__projeto{
+        width: 45vw;
+        height: 50vw;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .foto__projeto__mobile{
+        display: block;
+        width: 15vw;
+        height: 15vw;
+        background-color: #000;
+    }
+
+    .descricao__projeto{
+        width: 20vw;
+    }
+
+    .container__botoes{
+        align-self: center;
+        margin-top: 0;
+        width: 30vw;
+    }
+
+    .container__botoes button{
+        width: 12vw;
+    }
+
+    .descricao__projeto{
+        width: 45vw;
+        height: 25vw;
+        margin-top: 0;
+    }
+
+    /*Conteúdo Cinco - Certificados*/
+
+    .certificados{
+        height: 60vw;
+    }
+
+    .container__certificados{
+        height: 50vw;
+    }
+
+    .certificado{
+        height: 50vw;
+    }
+}
